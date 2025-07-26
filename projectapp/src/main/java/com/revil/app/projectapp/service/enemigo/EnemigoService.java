@@ -1,0 +1,4 @@
+package com.revil.app.projectapp.service.enemigo;
+
+public interface EnemigoService {
+}
