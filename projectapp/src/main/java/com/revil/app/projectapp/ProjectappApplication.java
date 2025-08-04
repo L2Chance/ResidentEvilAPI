@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProjectappApplication {
 
 	public static void main(String[] args) {
-		// Carga las variables del archivo .env
 		Dotenv dotenv = Dotenv.configure()
-				.directory("./")
+				.ignoreIfMalformed()
+				.ignoreIfMissing()
 				.load();
 
 		dotenv.entries().forEach(entry ->
